@@ -47,44 +47,7 @@
 
         <section class="">
             <h1 class="mb-6 text-4xl font-medium">Confira os serviços em alta</h1>
-            <div class="gap-10 justify-center grid grid-cols-3">
-                <div class="">
-                    <img class="rounded-xl w-full h-64 overflow-hidden" src="editor de video.webp" alt="">
-                    <div class="items-center">
-                        <h5 class="text-2xl md:text-2xl font-medium mt-3">Jorge</h5>
-                        <h5 class="ml-auto text-2xl md:text-xl font-medium mt-3">100R$</h5>
-                    </div>
-                    <p class="text-gray-800 text-lg mt-3">Edito videos profissionalmente para seu canal do Youtube.</p>
-                </div>
-
-                <div class="shadow-lg">
-                    <img class="rounded-xl w-full h-64 overflow-hidden" src="anuncio comercial.jpg" alt="">
-                    <div class="items-center">
-                        <h5 class="text-2xl md:text-2xl font-medium mt-3">Matheus</h5>
-                        <h5 class="ml-auto text-2xl md:text-xl font-medium mt-3">200R$</h5>
-                    </div>
-                    <p class="text-gray-800 text-lg mt-3">Faço anuncios publicitarios virais que convertem mais que
-                        seguidores.</p>
-                </div>
-
-
-                <div>
-                    <img class="rounded-xl w-full h-64 overflow-hidden" src="thumbail service.jpg" alt="">
-                    <div class="items-center">
-                        <h5 class="text-2xl md:text-2xl font-medium mt-3">Bremer</h5>
-                        <h5 class="ml-auto text-2xl md:text-xl font-medium mt-3">75R$</h5>
-                    </div>
-                    <p class="text-gray-800 text-lg mt-3">Faço thumbnails exclusivas para alavancar seu CTR.</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-3 gap-10 justify-center text-white font-semibold">
-                <a href="Editor.html"
-                    class="focus:sclae-95 transition-all duration-300 ease-out flex mt-4 bg-green-600 hover:bg-green-700 rounded-lg py-2 items-center justify-center">Comprar</a>
-                <a href="Marketin.html"
-                    class="focus:sclae-95 transition-all duration-300 ease-out flex mt-4 bg-green-600 hover:bg-green-700 rounded-lg py-2 items-center justify-center">Comprar</a>
-                <a href="Desing.html"
-                    class="focus:sclae-95 transition-all duration-300 ease-out flex mt-4 bg-green-600 hover:bg-green-700 rounded-lg py-2 items-center justify-center">Comprar</a>
-            </div>
+            <div class="gap-10 justify-center grid grid-cols-3" id="cards"></div>
         </section>
 
 
@@ -93,7 +56,9 @@
             <div class="gap">
                 <h1 class="text-3xl font-medium mb-3">VintePila pro.</h1>
                 <h2 class="text-7xl">O plano <span class="text-green-400">premium</span> para seu negócio</h2>
-                <div class="grid grid-cols-2 mt-5 gap-3">
+                
+                
+                <div class="grid grid-cols-2 mt-5 gap-3" id="premium">
                     <div>
                         <span class="stroke-green-400 material-symbols-outlined">
                             priority
@@ -134,7 +99,7 @@
                 alt="">
         </section>
 
-</section>
+        </section>
         <div class="gap-10 justify-between flex mb-10">
             <div class="flex flex-col">
                 <h1 class="mb-6">Categorias</h1>
@@ -229,7 +194,7 @@
         </nav>
 
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
