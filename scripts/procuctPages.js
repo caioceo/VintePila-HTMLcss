@@ -27,55 +27,55 @@ let conteudos = [
 
     },
 
-     {
-    category: "Video & Animation",
-    id: "Bremer",
-    profilePic: "https://randomuser.me/api/portraits/men/35.jpg",
-    title: "I will create a professional logo animation for your brand",
-    price: 104990,
-    desc: "Custom logo animation in 1080p or 4K with sound effects.",
-    banner: "https://mir-s3-cdn-cf.behance.net/project_modules/source/61f6a044363915.5810bd2c10570.jpg",
-    deliveryTime: "4-days-delivery",
-    revisions: "3 Revisions",
-    projectSize: "Large project",
-    avaliacoes: [
-        {
-            avaliador: "Camila",
-            foto: "",
-            comentario: "Ficou incrível, deu vida ao nosso logo!",
-            nota: 5,
-        },
-        {
-            avaliador: "Renan",
-            foto: "",
-            comentario: "Muito bom, mas poderia ter entregue um pouco antes.",
-            nota: 4,
-        }
-    ]
-},
     {
-    category: "Writing & Translation",
-    id: "Marta",
-    profilePic: "https://randomuser.me/api/portraits/women/65.jpg",
-    title: "I will write SEO optimized blog articles in English or Portuguese",
-    price: 65700,
-    desc: "SEO writing, grammar-checked, engaging style for blogs or websites.",
-    banner: "https://img.odcdn.com.br/wp-content/uploads/2025/05/marketing.jpg",
-    deliveryTime: "3-days-delivery",
-    revisions: "Unlimited Revisions",
-    projectSize: "Small project",
-    avaliacoes: [
+        category: "Video & Animation",
+        id: "Bremer",
+        profilePic: "https://randomuser.me/api/portraits/men/35.jpg",
+        title: "I will create a professional logo animation for your brand",
+        price: 104990,
+        desc: "Custom logo animation in 1080p or 4K with sound effects.",
+        banner: "https://mir-s3-cdn-cf.behance.net/project_modules/source/61f6a044363915.5810bd2c10570.jpg",
+        deliveryTime: "4-days-delivery",
+        revisions: "3 Revisions",
+        projectSize: "Large project",
+        avaliacoes: [
             {
-            avaliador: "Thiago",
-            foto: "",
-            comentario: "Texto bem escrito e com ótima fluidez.",
-            nota: 5,
+                avaliador: "Camila",
+                foto: "",
+                comentario: "Ficou incrível, deu vida ao nosso logo!",
+                nota: 5,
             },
             {
-            avaliador: "Luciana",
-            foto: "",
-            comentario: "Bom conteúdo, mas veio com alguns erros de digitação.",
-            nota: 3,
+                avaliador: "Renan",
+                foto: "",
+                comentario: "Muito bom, mas poderia ter entregue um pouco antes.",
+                nota: 4,
+            }
+        ]
+    },
+    {
+        category: "Writing & Translation",
+        id: "Marta",
+        profilePic: "https://randomuser.me/api/portraits/women/65.jpg",
+        title: "I will write SEO optimized blog articles in English or Portuguese",
+        price: 65700,
+        desc: "SEO writing, grammar-checked, engaging style for blogs or websites.",
+        banner: "https://img.odcdn.com.br/wp-content/uploads/2025/05/marketing.jpg",
+        deliveryTime: "3-days-delivery",
+        revisions: "Unlimited Revisions",
+        projectSize: "Small project",
+        avaliacoes: [
+            {
+                avaliador: "Thiago",
+                foto: "",
+                comentario: "Texto bem escrito e com ótima fluidez.",
+                nota: 5,
+            },
+            {
+                avaliador: "Luciana",
+                foto: "",
+                comentario: "Bom conteúdo, mas veio com alguns erros de digitação.",
+                nota: 3,
             }
         ]
     }
@@ -280,7 +280,7 @@ if (id) {
 
     const TodasAvaliacoes = document.getElementById("TodasAvaliacoes")
 
-    
+
     for (let i = 0; i < pagina.avaliacoes.length; i++) {
         const cardAvaliacao = document.createElement("div")
         console.log(pagina.avaliacoes[i])
