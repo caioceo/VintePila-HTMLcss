@@ -86,7 +86,7 @@ const id = url.get("name")
 
 //Pagina do produto dinamica
 
-if (id) {
+if (conteudos.find(conteudo => conteudo.id === id) !== undefined) {
     const conteudoPagina = document.getElementById("conteudo-pagina")
 
     const pagina = conteudos.find(conteudo => conteudo.id === id)
@@ -305,4 +305,6 @@ if (id) {
         TodasAvaliacoes.appendChild(cardAvaliacao)
 
     }
+} else {
+    console.log("dwmkpaiopawdj")
 }
