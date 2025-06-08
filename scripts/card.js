@@ -1,3 +1,4 @@
+//Banco de Dados
 let info = [
     {
         nome: "Jorge",
@@ -6,7 +7,7 @@ let info = [
         img: "imagens/editor de video.webp"
     },
     {
-        nome: "Matheus",
+        nome: "Marta",
         preco: 321,
         descricao: "Faço anuncios publicitarios virais",
         img: "imagens/anuncio comercial.jpg"
@@ -15,11 +16,14 @@ let info = [
         nome: "Bremer",
         preco: 3212,
         descricao: "Faço Thumbnails virais",
-        img: "imagens/thumbail service.jpg"
+        img: "imagens/thumbail service.jpg",
+        titulo: "",
     },
     
 ]
 
+
+//Cards no inde
 const inicioCard = document.getElementById("cards")
 
 for (let i = 0; i < info.length; i++) {
@@ -33,7 +37,7 @@ for (let i = 0; i < info.length; i++) {
             <h5 class="ml-auto text-2xl md:text-xl font-medium mt-3">R$${(info[i].preco/100).toFixed(2)}</h5>
         </div>
     <p class="text-gray-800 text-lg mt-3">${info[i].descricao}</p>
-    <a href="Editor.html"
+    <a href="produto.html?name=${info[i].nome}"
                     class="focus:sclae-95 transition-all duration-300 ease-out flex mt-4 bg-green-600 hover:bg-green-700 rounded-lg py-2 items-center justify-center">Comprar</a>
     `
     
